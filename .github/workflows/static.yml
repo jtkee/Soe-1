@@ -1,0 +1,14 @@
+<script>
+    const scenarios = [
+        "You witness a person being talked over in a meeting. What do you do?",
+        "You notice that a job applicant’s name seems foreign. What’s your reaction?",
+        "A customer appears upset and you assume they’re going to cause trouble. How do you respond?",
+    ];
+
+    function assignScenario() {
+        const randomIndex = Math.floor(Math.random() * scenarios.length);
+        document.getElementById("scenario").innerText = scenarios[randomIndex];
+    }
+
+    window.onload = assignScenario;
+</script>
